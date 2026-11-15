@@ -1,32 +1,19 @@
 const skills = {
-  frontend: {
-    title: "Frontend<br>Developer",
-    tagline: "Clean code should feel <span>effortless.</span>",
-    desc: "I build fast, simple and good looking pages that people enjoy using.",
-    color: "#22d3ee",
-    tags: ["HTML", "CSS", "JavaScript", "Responsive design", "Git"]
-  },
-  python: {
+   python: {
     title: "Python<br>Developer",
     tagline: "Simple code that <span>solves problems.</span>",
     desc: "I write clear Python programs and scripts that automate work and handle data.",
-    color: "#fbbf24",
+    color: "#11a5df",
     tags: ["Python", "OOP", "File handling", "Flask", "Automation scripts"]
   },
   data: {
     title: "Data<br>Engineer",
     tagline: "Raw data in, <span>clean data out.</span>",
     desc: "I build pipelines that collect, clean and store data so it is ready for analysis.",
-    color: "#34d399",
+    color: "#e10af4",
     tags: ["SQL", "Pandas", "ETL pipelines", "Data cleaning", "Apache Spark"]
-  },
-  fullstack: {
-    title: "Full Stack<br>Developer",
-    tagline: "From idea to <span>live website.</span>",
-    desc: "I connect what you see on the page with Python and a database behind it.",
-    color: "#f472b6",
-    tags: ["HTML & CSS", "JavaScript", "Python", "Flask", "SQL"]
   }
+  
 };
 
 const card = document.getElementById("card");
@@ -46,7 +33,7 @@ function renderChips(tags) {
   });
 }
 
-renderChips(skills.frontend.tags);
+renderChips(skills.python.tags);
 
 buttons.forEach(function (btn) {
   btn.addEventListener("click", function () {
