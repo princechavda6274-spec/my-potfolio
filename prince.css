@@ -244,11 +244,30 @@ footer {
 
 /* Mobile */
 @media (max-width: 800px) {
-  body { padding: 12px; }
-  .card { padding: 20px; }
-  .hero { grid-template-columns: 1fr; }
-  h1 { font-size: 2.8rem; }
+  body { padding: 12px; align-items: flex-start; }
+  .card { padding: 18px; border-radius: 20px; }
+
+  .hero { grid-template-columns: 1fr; gap: 16px; margin: 20px 0; }
+  h1 { font-size: 2.4rem; }
+  h3 { font-size: 1rem; }
+  .desc, .chips { max-width: 100%; }
+
+  .hero-photo {
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero-photo img { height: 260px; }
+
+  .stat.top { position: static; }
+  .stat-row {
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
   footer { grid-template-columns: 1fr 1fr; }
-  .hero-photo { min-height: 300px; }
-  .hero-photo img { height: 300px; }
+  .skill { font-size: 13px; padding: 10px; }
 }
