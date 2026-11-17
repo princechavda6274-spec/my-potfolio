@@ -3,7 +3,7 @@ const skills = {
     title: "Python<br>Developer",
     tagline: "Simple code that <span>solves problems.</span>",
     desc: "I write clear Python programs and scripts that automate work and handle data.",
-    color: "#11a5df",
+    color: "#0a22f5",
     tags: ["Python", "OOP", "File handling", "Flask", "Automation scripts"]
   },
   data: {
@@ -13,7 +13,6 @@ const skills = {
     color: "#e10af4",
     tags: ["SQL", "Pandas", "ETL pipelines", "Data cleaning", "Apache Spark"]
   }
-  
 };
 
 const card = document.getElementById("card");
@@ -33,7 +32,13 @@ function renderChips(tags) {
   });
 }
 
-renderChips(skills.python.tags);
+renderChips(["Python", "SQL", "ETL", "Data Warehousing", "Teradata"]);
+
+buttons.forEach(function (btn) {
+  if (btn.dataset.skill === "python") {
+    btn.classList.add("active");
+  }
+});
 
 buttons.forEach(function (btn) {
   btn.addEventListener("click", function () {

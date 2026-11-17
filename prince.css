@@ -1,7 +1,7 @@
 @property --tint {
   syntax: "<color>";
   inherits: true;
-  initial-value: #22d3ee;
+  initial-value: #042fef;
 }
 
 * {
@@ -208,7 +208,7 @@ h3 span {
 /* Skills bar (clickable) */
 footer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);;
   gap: 10px;
   padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -242,6 +242,28 @@ footer {
   color: #fff;
 }
 
+.hero-text {
+  order: -1;
+}
+
+.info {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+.info b {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.info a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 /* Mobile */
 @media (max-width: 800px) {
   body { padding: 12px; align-items: flex-start; }
@@ -268,6 +290,6 @@ footer {
     gap: 10px;
   }
 
-  footer { grid-template-columns: 1fr 1fr; }
+  footer { grid-template-columns:  1fr; }
   .skill { font-size: 13px; padding: 10px; }
 }
